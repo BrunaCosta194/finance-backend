@@ -17,7 +17,11 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration();
 
         config.setAllowCredentials(true);
-        config.setAllowedOrigins(List.of("http://localhost:3000"));
+        config.setAllowedOrigins(List.of(
+    "http://localhost:3000",
+    "https://finance-frontend-lilac.vercel.app",
+    "https://finance-frontend-bruna-hayatas-projects.vercel.app"
+));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowedMethods(List.of("*"));
 
